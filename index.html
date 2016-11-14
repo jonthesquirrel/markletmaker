@@ -29,7 +29,16 @@
   <pre id="output"></pre>
 
   <script>
+    document.querySelector('#input').addEventListener('input', processInput)
 
+    function processInput(event) {
+      // var script = event.target.text
+      console.log(event)
+    }
+
+    function scriptToMarklet(script) {
+      return marklet
+    }
   </script>
 </body>
 </html>
