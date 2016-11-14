@@ -33,11 +33,14 @@
     document.querySelector('#input').addEventListener('input', processInput)
 
     function processInput(event) {
-      // var script = event.target.text
-      console.log(event)
+      var script = event.target.value
+      var marklet = scriptToMarklet(script)
+      document.querySelector('#output').innerHTML = marklet
     }
 
     function scriptToMarklet(script) {
+      //temp
+      marklet = script
       return marklet
     }
   </script>
