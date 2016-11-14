@@ -39,8 +39,9 @@
     }
 
     function scriptToMarklet(script) {
-      //temp
-      marklet = encodeURIComponent(script)
+      var marklet = script
+      marklet = encodeURIComponent(marklet)
+      marklet = 'javascript:(' + marklet + ')'
       return marklet
     }
   </script>
