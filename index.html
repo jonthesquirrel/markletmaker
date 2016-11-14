@@ -6,6 +6,20 @@
   <title>markletmaker</title>
 
   <style>
+    .fullleft, .fullright {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+    }
+
+    .fullleft {
+      left: 0;
+    }
+
+    .fullright {
+      right: 0;
+    }
+
     #output {
       background-color: lightgrey;
     }
@@ -13,8 +27,8 @@
 </head>
 <body>
 
-  <textarea id="input"></textarea>
-  <pre id="output">&nbsp;</pre>
+  <textarea id="input" class="fullleft"></textarea>
+  <pre id="output" class="fullright"></pre>
 
   <script>
 
